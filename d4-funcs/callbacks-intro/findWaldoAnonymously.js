@@ -1,8 +1,7 @@
 // The second argument/parameter is expected to be a (callback) function
 const findWaldo = function(names, func) {
-  names.forEach(element => {
-    let index = names.indexOf(element);
-    let name = element;
+  names.forEach(name => {
+    let index = names.indexOf(name);
     if (name === "Waldo") {
       func(index);   // execute callback
     }
